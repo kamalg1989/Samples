@@ -1,0 +1,24 @@
+package com.excel.controller;
+
+import java.util.List;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.excel.parse.ExcelTransposeUtil;
+
+
+@RestController
+public class ExcelController {
+	 @CrossOrigin(origins = "http://localhost:8080")
+	 @RequestMapping(value = "/excel/raw",method = RequestMethod.GET)
+	    public String findStudents() {
+		 
+		 ExcelTransposeUtil.mainTranspose();
+
+	        return "SUCCESS";
+	        
+	    }
+	
+}

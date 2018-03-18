@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;spring-boot-2-jdbc-with-h2/src/main/java/com.excel.parse&apos;&#x0D;&#x0A;- Original project: &apos;spring-boot&apos;&#x0D;&#x0A;- Destination element: &apos;spring-boot-2-jdbc-with-h2/src/main/java/com.excel.parse&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     net.petrikainulainen.springbatch.ExcelTransposeUtil.java&#x0D;&#x0A;     net.petrikainulainen.springbatch.ToCSV.java" description="Copy compilation units" destination="=spring-boot-2-jdbc-with-h2/src\/main\/java&lt;com.excel.parse" element1="/src\/main\/java&lt;net.petrikainulainen.springbatch{ExcelTransposeUtil.java" element2="/src\/main\/java&lt;net.petrikainulainen.springbatch{ToCSV.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1521386197700" units="2" version="1.0"/>
+</session>

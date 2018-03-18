@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;ExcelTransposeUtil.java&apos; to &apos;spring-boot/src/main/java/net.petrikainulainen.springbatch&apos;&#x0D;&#x0A;- Original project: &apos;dataStore&apos;&#x0D;&#x0A;- Destination element: &apos;spring-boot/src/main/java/net.petrikainulainen.springbatch&apos;&#x0D;&#x0A;- Original element: &apos;com.kamal.demo.ExcelTransposeUtil.java&apos;" description="Copy compilation unit" destination="=spring-boot/src\/main\/java&lt;net.petrikainulainen.springbatch" element1="/src\/main\/java&lt;com.kamal.demo{ExcelTransposeUtil.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1521308043818" units="1" version="1.0"/>
+</session>

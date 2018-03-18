@@ -1,0 +1,23 @@
+package com.excel.controller;
+
+import java.util.List;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+import net.petrikainulainen.springbatch.student.StudentDTO;
+
+@RestController
+@RequestMapping("/excel/raw")
+public class ExcelController {
+
+	 @RequestMapping(method = RequestMethod.GET)
+	    public String findStudents() {
+
+
+	        return "SUCCESS";
+	        
+	    }
+	
+}

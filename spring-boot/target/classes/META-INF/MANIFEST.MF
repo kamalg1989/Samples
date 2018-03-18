@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Implementation-Title: Spring Batch Tutorial: Spring Boot Example
+Implementation-Version: 0.1
+Built-By: KAMAL
+Implementation-Vendor-Id: net.petrikainulainen.spring.batch
+Build-Jdk: 1.8.0_161
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+
