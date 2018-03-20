@@ -19,7 +19,6 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.util.CellRangeAddress;
 import org.h2.util.StringUtils;
-import org.springframework.beans.factory.annotation.Autowired;
 
 public class ExcelTransposeUtil {
 
@@ -71,12 +70,13 @@ public class ExcelTransposeUtil {
 
 	   // RawPOJO pojo =new RawPOJO();
         String methodName = "";
-        List<RawPOJO> list = new ArrayList<RawPOJO>();
+        //List<RawPOJO> list = new ArrayList<RawPOJO>();
         Row header = sheet.getRow(0);
 	    for (int rowNum = 1; rowNum <= lastRow; rowNum++) {
 	    	RawPOJO pojo =new RawPOJO();
 	        Row row = sheet.getRow(rowNum);
-	        if (row == null) {
+	        Cell cell1 = row.getCell(0);
+	        if (row == null ||(cell1!=null && cell1.getCellType()!=cell1.CELL_TYPE_BLANK && StringUtils.isNullOrEmpty(cell1.getStringCellValue()))) {
 	            continue;
 	        }
 	        for (int columnNum = 0; columnNum < lastColumn; columnNum++) {
@@ -104,7 +104,6 @@ public class ExcelTransposeUtil {
 					e.printStackTrace();
 				}
 	        }
-	        pojo.setIds(rowNum);
 	        repo.save(pojo);
 	       // list.add(pojo);
 	    }

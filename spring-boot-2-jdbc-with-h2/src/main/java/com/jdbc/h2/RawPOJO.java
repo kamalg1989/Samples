@@ -2,17 +2,19 @@ package com.jdbc.h2;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.PostLoad;
-import javax.persistence.PostPersist;
-import javax.persistence.Transient;
+import javax.persistence.IdClass;
 
 import org.springframework.data.domain.Persistable;
 
 @Entity
-public class RawPOJO implements Persistable<String> {
+@IdClass(RawKey.class)
+public class RawPOJO  {
 	@Id
-	private long ids;
 	private String FISCALPERIOD;
+	@Id
+	private String REPORT;
+	@Id
+	private String STOCK;
 	private String REVENUEPERSHARE;
 	private String EBITDAPERSHARE;
 	private String EBITPERSHARE;
@@ -206,8 +208,8 @@ public class RawPOJO implements Persistable<String> {
 	private String RESTATEDFILINGDATE;
 	private String NUMBEROFSHAREHOLDERS;
 	private String NUMBEROFEMPLOYEES;
-	private String REPORT;
-	private String STOCK;
+
+
 	public String getFISCALPERIOD() {
 		return FISCALPERIOD;
 	}
@@ -1384,30 +1386,6 @@ public class RawPOJO implements Persistable<String> {
 	public void setSTOCK(String sTOCK) {
 		STOCK = sTOCK;
 	}
-	public long getIds() {
-		return ids;
-	}
-	public void setIds(long ids) {
-		this.ids = ids;
-	}
-	@Override
-	public String getId() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-	private @Transient boolean isNew = true;
-	 
- 
-    @PostPersist
-    @PostLoad
-    void markNotNew() {
-        this.isNew = false;
-    }
- 
-    @Override
-    public boolean isNew() {
-        return isNew;
-    }
-
+	
 	
 }
