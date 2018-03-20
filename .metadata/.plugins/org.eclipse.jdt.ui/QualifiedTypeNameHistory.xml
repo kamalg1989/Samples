@@ -17,8 +17,11 @@
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
 <fullyQualifiedTypeName name="com.jdbc.pojo.RawPOJO"/>
 <fullyQualifiedTypeName name="java.lang.reflect.Method"/>
-<fullyQualifiedTypeName name="org.h2.util.StringUtils"/>
-<fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
-<fullyQualifiedTypeName name="com.jdbc.pojo.RawDAO"/>
 <fullyQualifiedTypeName name="com.excel.parse.ExcelTransposeUtil"/>
+<fullyQualifiedTypeName name="org.springframework.util.StringUtils"/>
+<fullyQualifiedTypeName name="org.apache.commons.lang3.StringUtils"/>
+<fullyQualifiedTypeName name="org.apache.commons.codec.binary.StringUtils"/>
+<fullyQualifiedTypeName name="org.h2.util.StringUtils"/>
+<fullyQualifiedTypeName name="com.jdbc.pojo.RawDAO"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
 </qualifiedTypeNameHistroy>

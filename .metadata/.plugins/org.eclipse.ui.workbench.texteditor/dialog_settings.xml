@@ -2,12 +2,17 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="setMONTHENDSTOCKPRICE" key="selection"/>
+		<item value="ERROR" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="error"/>
+			<item value="liq`"/>
+			<item value="liq"/>
+			<item value="h2"/>
+			<item value="1.4.190"/>
 			<item value="setMonthEndStockPrice"/>
 			<item value="Cell.CELL_TYPE"/>
 			<item value="CELL_TYPE_NUMERIC"/>

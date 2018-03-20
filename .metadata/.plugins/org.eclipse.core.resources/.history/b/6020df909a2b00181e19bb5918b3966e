@@ -1,0 +1,30 @@
+package com.jdbc.h2;
+
+import java.util.List;
+
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
+import org.springframework.data.jpa.repository.support.SimpleJpaRepository;
+import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
+ 
+/**
+ * Created by hameister on 19.12.17.
+ */
+ 
+@Repository
+public class BulkImporterRepository extends SimpleJpaRepository<RawPOJO, String> {
+	@PersistenceContext
+    private EntityManager entityManager;
+    public BulkImporterRepository(EntityManager entityManager) {
+        super(RawPOJO.class, entityManager);
+        this.entityManager=entityManager;
+    }
+ 
+    @Transactional
+    public List<RawPOJO> save(List<RawPOJO> items) {
+        items.forEach(item -> entityManager.persist(item));
+        return items;
+    }
+}
