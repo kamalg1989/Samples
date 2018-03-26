@@ -196,16 +196,16 @@ public class ExcelTransposeUtil {
 		for (int i = 0; i < sheet.getNumMergedRegions(); i++) {
 			
 			mRegion = sheet.getMergedRegion(i);
-			System.out.println(mRegion.toString());
+			//System.out.println(mRegion.toString());
 			int fromRow = mRegion.getFirstRow();
 			int toRow = mRegion.getLastRow();
 			int fromCol = mRegion.getFirstColumn();
 			int toCol = mRegion.getLastColumn();
 			int noC =	mRegion.getNumberOfCells();
-			System.out.println(noC);
+			//System.out.println(noC);
 			Row row = sheet.getRow(fromRow);
 			Cell cell = row.getCell(fromCol);
-			System.out.println("cell"+cell.toString());
+			//System.out.println("cell"+cell.toString());
 			if(cell.toString().equals("Annual Data"))
 				return noC;
 			//Do something here with the infos
